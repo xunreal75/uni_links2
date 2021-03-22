@@ -1,28 +1,24 @@
 name: uni_links2
-description: Flutter plugin for accepting incoming links - App/Deep Links (Android), Universal Links and Custom URL schemes (iOS).
-version: 0.5.0
+version: 0.5.0+1
 homepage: https://github.com/ericmartineau/unilinks
-
-dependencies:
-  flutter:
-    sdk: flutter
+description: Flutter plugin for accepting incoming links - App/Deep Links (Android), Universal Links and Custom URL schemes (iOS).
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: '>=2.0.1 <3.0.0'
+dependencies: 
   uni_links_platform_interface: ^1.0.0
   uni_links_web: ^0.1.0
-
-dev_dependencies:
-  flutter_test:
+  flutter: 
     sdk: flutter
+dev_dependencies: 
   pedantic: ^1.11.0
-
-environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.0.1 <3.0.0"
-
-flutter:
-  plugin:
-    platforms:
-      android:
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  plugin: 
+    platforms: 
+      android: 
         package: name.avioli.unilinks
         pluginClass: UniLinksPlugin
-      ios:
+      ios: 
         pluginClass: UniLinksPlugin

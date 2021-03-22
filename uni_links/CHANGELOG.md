@@ -1,3 +1,76 @@
+## [0.5.0+1]
+ * Adding fastlane for easier releases
+Merge branch 'nfc_support' of https://github.com/CathalT/uni_links
+Migrate to Flutter 2 and Dart 2 null safety system
+Merge pull request #98 from avioli/avioli-patch-1
+Update versions
+Update pubspec.yaml
+Update pubspec.yaml
+Merge pull request #93 from hacker1024/web
+
+Merge pull request #92 from hacker1024/modernized
+
+Support the Web
+uni_links: Example: Move the MaterialApp widget above MyApp
+This allows features provided by the widget to be accessed from MyApp’s build method’s BuildContext.
+uni_links: Android: Migrate to v2 embedding APIs
+Migrate to the federated plugin architecture, null safety
+- Migrate to a federated architecture
+- Migrate to null safety
+- Update example to work with the breaking API changes, and comply with effective Dart guidelines
+Add missing fields to example pubspec
+be pedantic
+add pedantic dev-dep
+exclude generated java files
+add a button to force-quit the app
+show the initial link in the example app
+let both android studio and xcode alter their files
+upgrade example's gradle
+remove deprecated pubspec field - author
+conform to latest plugin configuration for publishing
+update changelog
+sync version
+update travis config
+format the java files
+use AOSP style instead of Google Style (4-space indentation)
+Merge pull request #55 from markathomas/master
+Fix UniLinks Plugin for Flutter 1.12.13
+Merge branch 'master' into master
+Merge pull request #42 from ened/ios-warnings
+Reduce iOS compiler warnings
+add format-dart to makefile
+"format" the comments :)
+add makefile to run the java and objective-c formatters
+fix tests - init the binary messenger binding is running
+fix used jdk and use latest version of the google-java-format
+disable the apk and ipa app building jobs
+add new example ignored files
+add new ios ignored files
+Add missing new intent listener registration
+Fix UniLinks Plugin for Flutter 1.12.13
+Update .travis.yml
+Fix CI error
+Bump version, update changelog.
+Update iOS side in example project.
+Add NS_ASSUME_NONNULL* macro to reduce compiler warnings.
+iOS NFC NDEF support
+Android NFC NDEF support
+fix typo and add clarify that the Stream is also important
+add some clarification about links starting your app
+add some clarification what URIs can be used in the different configs
+add attribution
+Merge branch 'bbedward-master'
+Fix example app
+Update example
+Update changelog and version
+Update to androidX
+remove the note for extra Objective-C code to support Universal Links; cleanup example.
+Move uni_links to dep section from dev
+Since that's the right place for it, although it doesn't matter for the example.
+Merge pull request #13 from MisterJimson/master
+Change "permissions" to "intent filters" in readme.
+Update README.md
+
 ## [0.5.0] - 2020-12-28
 
 **Breaking changes**  
