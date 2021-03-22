@@ -1,6 +1,7 @@
 #import <Flutter/Flutter.h>
 #import <CoreNFC/CoreNFC.h>
 
+
 @protocol UriDelegate <NSObject>
 - (void) foundUri:(NSString* _Nullable) uri;
 @end
@@ -21,4 +22,3 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 - (void) stop;
 @end
 
-NS_ASSUME_NONNULL_END

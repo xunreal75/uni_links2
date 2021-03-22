@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:uni_links_platform_interface/uni_links_platform_interface.dart';
+import 'package:uni_links2_platform_interface/uni_links_platform_interface.dart';
 
 /// Returns a [Future], which completes to the initially stored link, which
 /// may be null.
