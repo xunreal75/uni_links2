@@ -1,4 +1,4 @@
-package name.avioli.unilinks;
+package app.huth.unilinks;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -85,6 +85,15 @@ public class UniLinksPlugin
   public void onCancel(Object arguments) {
     // registrar.activity().unregisterReceiver(changeReceiver);
     changeReceiver = null;
+  }
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.main);
+
+    Intent intent = getIntent();
+    String action = intent.getAction();
+    Uri data = intent.getData();
   }
 
   @Override

@@ -1,6 +1,5 @@
 name: uni_links2_platform_interface
-version: 1.0.0+2
-homepage: https://github.com/ericmartineau/uni_links/tree/master/uni_links_platform_interface
+version: 1.0.0+3
 description: The platform interface for the uni_links plugin.
 environment: 
   sdk: '>=2.12.0 <3.0.0'

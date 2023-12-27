@@ -1,8 +1,9 @@
-package name.avioli.unilinks;
+package app.huth.unilinks;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import androidx.annotation.Nullable;
 
 import androidx.annotation.NonNull;
 
@@ -31,6 +32,9 @@ public class UniLinksPlugin
     private String latestLink;
     private Context context;
     private boolean initialIntent = true;
+
+    @SuppressWarnings("deprecation")
+    @Nullable private io.flutter.plugin.common.PluginRegistry.Registrar pluginRegistrar;
 
     private void handleIntent(Context context, Intent intent) {
         String action = intent.getAction();
@@ -81,7 +85,8 @@ public class UniLinksPlugin
     }
 
     /** Plugin registration. */
-    public static void registerWith(@NonNull PluginRegistry.Registrar registrar) {
+    @SuppressWarnings("deprecation")
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
         // Detect if we've been launched in background
         if (registrar.activity() == null) {
             return;
